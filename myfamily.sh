@@ -1,0 +1,1 @@
+curl -s https://zero.academie.one/assets/superhero/all.json | jq --argjson id "$HERO_ID" ' .[] | select(.id == $id) | .connections.relatives' | sed 's/^"\(.*\)"$/\1/'

@@ -1,0 +1,1 @@
+ls -p -A -t --time=atime | grep -v "[./]" | tr '\n' ',' | sed 's/,$//'
